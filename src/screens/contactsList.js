@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import Contacts from 'react-native-contacts';
 import SearchBar from '../components/searchBar';
-import ContactListItem from '../components/contactItem';
+import ContactListItem from '../components/contactListItem';
 
 const ContactList = ({route, navigation}) => {
 	const [contacts, setContacts] = useState([]);
