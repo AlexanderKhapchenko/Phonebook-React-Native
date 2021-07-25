@@ -17,7 +17,7 @@ const Contact = ({route, navigation}) => {
 
 	const onDelete = async () => {
 		await Contacts.deleteContact(contact);
-		navigation.navigate('ContactList', {
+		navigation.navigate('Contact List', {
 			id: contact.recordID,
 		});
 	};

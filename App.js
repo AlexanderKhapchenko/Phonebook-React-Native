@@ -13,8 +13,8 @@ const App = () => {
 	return (
 		<NavigationContainer>
 			<StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-			<Stack.Navigator initialRouteName="ContactList">
-				<Stack.Screen name="ContactList" component={ContactList} />
+			<Stack.Navigator initialRouteName="Contact List">
+				<Stack.Screen name="Contact List" component={ContactList} />
 				<Stack.Screen name="Contact" component={Contact} />
 			</Stack.Navigator>
 		</NavigationContainer>
