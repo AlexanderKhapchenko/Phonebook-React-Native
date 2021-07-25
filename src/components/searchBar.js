@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet, TextInput} from 'react-native';
+import {View, StyleSheet, TextInput, Text} from 'react-native';
 
 const SearchBar = ({onChange}) => {
 	const onChangeText = text => {
@@ -7,10 +7,11 @@ const SearchBar = ({onChange}) => {
 	};
 
 	return (
-		<View>
+		<View style={styles.container}>
+			<Text style={styles.text}>🔍</Text>
 			<TextInput
 				onChangeText={onChangeText}
-				placeholder={'Search..'}
+				placeholder={'Search ...'}
 				style={styles.input}
 				placeholderTextColor="#515151"
 				autoCorrect={false}
@@ -21,12 +22,23 @@ const SearchBar = ({onChange}) => {
 
 const styles = StyleSheet.create({
 	container: {
-		flex: 1,
+		flexDirection: 'row',
 		alignItems: 'center',
-		padding: 8,
+		borderRadius: 25,
+		overflow: 'hidden',
+		borderColor: '#ccc',
+		borderWidth: 2,
+		paddingLeft: 10,
+		margin: 10,
+		backgroundColor: 'white',
 	},
 	input: {
 		alignItems: 'center',
+		fontSize: 16,
+		color: '#515151',
+	},
+	text: {
+		color: '#515151',
 	},
 });
 
